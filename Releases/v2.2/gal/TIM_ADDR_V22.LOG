@@ -1,0 +1,66 @@
+EQN2JED - Boolean Equations to JEDEC file assembler (Version V101)
+Copyright (c) National Semiconductor Corporation 1990-1993
+
+Log file for TIMADR22.EQN
+Device: 16V8
+
+Pin   Label               Type
+---   -----               ----
+2     A15                 pos,com input
+3     A7                  pos,com input
+4     A6                  pos,com input
+5     A5                  pos,com input
+6     A4                  pos,com input
+7     IOE                 pos,com input
+8     A3                  pos,com input
+9     A2                  pos,com input
+10    GND                 ground pin
+12    /FDCSEL             neg,com output
+13    /FDCDMA             neg,com output
+14    /EXPSEL             neg,com output
+15    /PRINT              neg,com output
+16    /IDECS              neg,com output
+19    /LATCH              neg,com feedback
+20    VCC                 power pin
+
+EQN2JED - Boolean Equations to JEDEC file assembler (Version V101)
+Copyright (c) National Semiconductor Corporation 1990-1993
+
+Device Utilization:
+
+No of dedicated inputs used               :  8/10 (80.0%)
+No of dedicated outputs used              :  2/2  (100.0%)
+No of feedbacks used as dedicated outputs :  3/6  (50.0%)
+No of feedbacks used                      :  1/6  (16.7%)
+
+		------------------------------------------
+		Pin   Label                 Terms Usage
+		------------------------------------------
+		19    LATCH                 8/8   (100.0%)
+		16    IDECS                 1/8   (12.5%)
+		15    PRINT                 1/8   (12.5%)
+		14    EXPSEL                3/8   (37.5%)
+		13    FDCDMA                1/8   (12.5%)
+		12    FDCSEL                1/8   (12.5%)
+		------------------------------------------
+		Total Terms                15/64  (23.4%)
+		------------------------------------------
+
+EQN2JED - Boolean Equations to JEDEC file assembler (Version V101)
+Copyright (c) National Semiconductor Corporation 1990-1993
+
+                            Chip diagram (DIP)
+
+                             ._____    _____.
+                             |     \__/     |
+                             |  1        20 | VCC
+                         A15 |  2        19 | /LATCH
+                          A7 |  3        18 | 
+                          A6 |  4        17 | 
+                          A5 |  5        16 | /IDECS
+                          A4 |  6        15 | /PRINT
+                         IOE |  7        14 | /EXPSEL
+                          A3 |  8        13 | /FDCDMA
+                          A2 |  9        12 | /FDCSEL
+                         GND | 10        11 | 
+                             |______________|

@@ -1,0 +1,245 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[0]'
+Slack : -20.500
+TNS   : -307.500
+
+Type  : Setup 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[1]'
+Slack : -20.500
+TNS   : -307.500
+
+Type  : Setup 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[2]'
+Slack : -20.500
+TNS   : -307.500
+
+Type  : Setup 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[3]'
+Slack : -20.500
+TNS   : -307.500
+
+Type  : Setup 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[4]'
+Slack : -20.500
+TNS   : -307.500
+
+Type  : Setup 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[5]'
+Slack : -20.500
+TNS   : -307.500
+
+Type  : Setup 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[6]'
+Slack : -20.500
+TNS   : -307.500
+
+Type  : Setup 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[7]'
+Slack : -20.500
+TNS   : -307.500
+
+Type  : Setup 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[8]'
+Slack : -20.500
+TNS   : -307.500
+
+Type  : Setup 'CLK'
+Slack : -8.500
+TNS   : -85.000
+
+Type  : Setup 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[1]'
+Slack : -3.500
+TNS   : -35.000
+
+Type  : Setup 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[0]'
+Slack : -3.500
+TNS   : -31.500
+
+Type  : Setup 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[2]'
+Slack : -3.500
+TNS   : -31.500
+
+Type  : Setup 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[3]'
+Slack : -3.500
+TNS   : -31.500
+
+Type  : Setup 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[4]'
+Slack : -3.500
+TNS   : -31.500
+
+Type  : Setup 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[5]'
+Slack : -3.500
+TNS   : -31.500
+
+Type  : Setup 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[6]'
+Slack : -3.500
+TNS   : -31.500
+
+Type  : Setup 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[7]'
+Slack : -3.500
+TNS   : -31.500
+
+Type  : Setup 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[8]'
+Slack : -3.500
+TNS   : -31.500
+
+Type  : Setup 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[9]'
+Slack : -3.500
+TNS   : -31.500
+
+Type  : Hold 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[1]'
+Slack : -4.000
+TNS   : -40.000
+
+Type  : Hold 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[0]'
+Slack : -4.000
+TNS   : -36.000
+
+Type  : Hold 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[2]'
+Slack : -4.000
+TNS   : -36.000
+
+Type  : Hold 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[3]'
+Slack : -4.000
+TNS   : -36.000
+
+Type  : Hold 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[4]'
+Slack : -4.000
+TNS   : -36.000
+
+Type  : Hold 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[5]'
+Slack : -4.000
+TNS   : -36.000
+
+Type  : Hold 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[6]'
+Slack : -4.000
+TNS   : -36.000
+
+Type  : Hold 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[7]'
+Slack : -4.000
+TNS   : -36.000
+
+Type  : Hold 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[8]'
+Slack : -4.000
+TNS   : -36.000
+
+Type  : Hold 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[9]'
+Slack : -4.000
+TNS   : -36.000
+
+Type  : Hold 'CLK'
+Slack : 1.000
+TNS   : 0.000
+
+Type  : Hold 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[0]'
+Slack : 13.500
+TNS   : 0.000
+
+Type  : Hold 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[1]'
+Slack : 13.500
+TNS   : 0.000
+
+Type  : Hold 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[2]'
+Slack : 13.500
+TNS   : 0.000
+
+Type  : Hold 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[3]'
+Slack : 13.500
+TNS   : 0.000
+
+Type  : Hold 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[4]'
+Slack : 13.500
+TNS   : 0.000
+
+Type  : Hold 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[5]'
+Slack : 13.500
+TNS   : 0.000
+
+Type  : Hold 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[6]'
+Slack : 13.500
+TNS   : 0.000
+
+Type  : Hold 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[7]'
+Slack : 13.500
+TNS   : 0.000
+
+Type  : Hold 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[8]'
+Slack : 13.500
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[1]'
+Slack : -5.500
+TNS   : -462.000
+
+Type  : Minimum Pulse Width 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[0]'
+Slack : -5.500
+TNS   : -165.000
+
+Type  : Minimum Pulse Width 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[1]'
+Slack : -5.500
+TNS   : -165.000
+
+Type  : Minimum Pulse Width 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[2]'
+Slack : -5.500
+TNS   : -165.000
+
+Type  : Minimum Pulse Width 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[3]'
+Slack : -5.500
+TNS   : -165.000
+
+Type  : Minimum Pulse Width 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[4]'
+Slack : -5.500
+TNS   : -165.000
+
+Type  : Minimum Pulse Width 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[5]'
+Slack : -5.500
+TNS   : -165.000
+
+Type  : Minimum Pulse Width 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[6]'
+Slack : -5.500
+TNS   : -165.000
+
+Type  : Minimum Pulse Width 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[7]'
+Slack : -5.500
+TNS   : -165.000
+
+Type  : Minimum Pulse Width 'vcount:inst2|lpm_counter:LPM_COUNTER_component|dffs[8]'
+Slack : -5.500
+TNS   : -165.000
+
+Type  : Minimum Pulse Width 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[0]'
+Slack : -5.500
+TNS   : -99.000
+
+Type  : Minimum Pulse Width 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[2]'
+Slack : -5.500
+TNS   : -99.000
+
+Type  : Minimum Pulse Width 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[3]'
+Slack : -5.500
+TNS   : -99.000
+
+Type  : Minimum Pulse Width 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[4]'
+Slack : -5.500
+TNS   : -99.000
+
+Type  : Minimum Pulse Width 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[5]'
+Slack : -5.500
+TNS   : -99.000
+
+Type  : Minimum Pulse Width 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[6]'
+Slack : -5.500
+TNS   : -99.000
+
+Type  : Minimum Pulse Width 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[7]'
+Slack : -5.500
+TNS   : -99.000
+
+Type  : Minimum Pulse Width 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[8]'
+Slack : -5.500
+TNS   : -99.000
+
+Type  : Minimum Pulse Width 'hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[9]'
+Slack : -5.500
+TNS   : -99.000
+
+Type  : Minimum Pulse Width 'CLK'
+Slack : -4.500
+TNS   : -90.000
+
+------------------------------------------------------------

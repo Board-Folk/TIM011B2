@@ -1,0 +1,540 @@
+Analysis & Synthesis report for timvideo
+Sat May 16 19:04:58 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. Parameter Settings for User Entity Instance: hcount:inst|lpm_counter:LPM_COUNTER_component
+ 10. Parameter Settings for User Entity Instance: vcount:inst2|lpm_counter:LPM_COUNTER_component
+ 11. Parameter Settings for User Entity Instance: addrmux:inst13|LPM_MUX:LPM_MUX_component
+ 12. Parameter Settings for User Entity Instance: scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component
+ 13. Parameter Settings for User Entity Instance: lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-----------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Sat May 16 19:04:58 2026           ;
+; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name               ; timvideo                                        ;
+; Top-level Entity Name       ; timvideo                                        ;
+; Family                      ; MAX7000S                                        ;
+; Total macrocells            ; 118                                             ;
+; Total pins                  ; 63                                              ;
++-----------------------------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                     ; Setting         ; Default Value ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Device                                                                     ; EPM7128SLC84-15 ;               ;
+; Top-level entity name                                                      ; timvideo        ; timvideo      ;
+; Family name                                                                ; MAX7000S        ; Cyclone IV GX ;
+; Use smart compilation                                                      ; Off             ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
+; Enable compact report table                                                ; Off             ; Off           ;
+; Create Debugging Nodes for IP Cores                                        ; Off             ; Off           ;
+; Preserve fewer node names                                                  ; On              ; On            ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off             ; Off           ;
+; Verilog Version                                                            ; Verilog_2001    ; Verilog_2001  ;
+; VHDL Version                                                               ; VHDL_1993       ; VHDL_1993     ;
+; State Machine Processing                                                   ; Auto            ; Auto          ;
+; Safe State Machine                                                         ; Off             ; Off           ;
+; Extract Verilog State Machines                                             ; On              ; On            ;
+; Extract VHDL State Machines                                                ; On              ; On            ;
+; Ignore Verilog initial constructs                                          ; Off             ; Off           ;
+; Iteration limit for constant Verilog loops                                 ; 5000            ; 5000          ;
+; Iteration limit for non-constant Verilog loops                             ; 250             ; 250           ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On              ; On            ;
+; Infer RAMs from Raw Logic                                                  ; On              ; On            ;
+; Parallel Synthesis                                                         ; On              ; On            ;
+; NOT Gate Push-Back                                                         ; On              ; On            ;
+; Power-Up Don't Care                                                        ; On              ; On            ;
+; Remove Duplicate Registers                                                 ; On              ; On            ;
+; Ignore CARRY Buffers                                                       ; Off             ; Off           ;
+; Ignore CASCADE Buffers                                                     ; Off             ; Off           ;
+; Ignore GLOBAL Buffers                                                      ; Off             ; Off           ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off             ; Off           ;
+; Ignore LCELL Buffers                                                       ; Auto            ; Auto          ;
+; Ignore SOFT Buffers                                                        ; Off             ; Off           ;
+; Limit AHDL Integers to 32 Bits                                             ; Off             ; Off           ;
+; Optimization Technique                                                     ; Speed           ; Speed         ;
+; Allow XOR Gate Usage                                                       ; On              ; On            ;
+; Auto Logic Cell Insertion                                                  ; On              ; On            ;
+; Parallel Expander Chain Length                                             ; 4               ; 4             ;
+; Auto Parallel Expanders                                                    ; On              ; On            ;
+; Auto Open-Drain Pins                                                       ; On              ; On            ;
+; Auto Resource Sharing                                                      ; Off             ; Off           ;
+; Maximum Fan-in Per Macrocell                                               ; 100             ; 100           ;
+; Use LogicLock Constraints during Resource Balancing                        ; On              ; On            ;
+; Ignore translate_off and synthesis_off directives                          ; Off             ; Off           ;
+; Report Parameter Settings                                                  ; On              ; On            ;
+; Report Source Assignments                                                  ; On              ; On            ;
+; Report Connectivity Checks                                                 ; On              ; On            ;
+; HDL message level                                                          ; Level2          ; Level2        ;
+; Suppress Register Optimization Related Messages                            ; Off             ; Off           ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000            ; 5000          ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000            ; 5000          ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100             ; 100           ;
+; Block Design Naming                                                        ; Auto            ; Auto          ;
+; Synthesis Effort                                                           ; Auto            ; Auto          ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On              ; On            ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off             ; Off           ;
+; Analysis & Synthesis Message Level                                         ; Medium          ; Medium        ;
+; Disable Register Merging Across Hierarchies                                ; Auto            ; Auto          ;
+; Synthesis Seed                                                             ; 1               ; 1             ;
++----------------------------------------------------------------------------+-----------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; timvideo.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/altera/projects/tim011video/timvideo.bdf                               ;         ;
+; hcount.vhd                       ; yes             ; User Wizard-Generated File         ; C:/altera/projects/tim011video/hcount.vhd                                 ;         ;
+; vcount.vhd                       ; yes             ; User Wizard-Generated File         ; C:/altera/projects/tim011video/vcount.vhd                                 ;         ;
+; addrmux.vhd                      ; yes             ; User Wizard-Generated File         ; C:/altera/projects/tim011video/addrmux.vhd                                ;         ;
+; scradd.vhd                       ; yes             ; User Wizard-Generated File         ; C:/altera/projects/tim011video/scradd.vhd                                 ;         ;
+; output_files/lpm_add_sub0.vhd    ; yes             ; User Wizard-Generated File         ; C:/altera/projects/tim011video/output_files/lpm_add_sub0.vhd              ;         ;
+; 21mux.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/21mux.bdf             ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.inc            ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc          ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
+; addcore.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.inc             ;         ;
+; look_add.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc            ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc            ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
+; addcore.tdf                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.tdf             ;         ;
+; a_csnbuffer.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_csnbuffer.inc         ;         ;
+; a_csnbuffer.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_csnbuffer.tdf         ;         ;
+; look_add.tdf                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.tdf            ;         ;
+; altshift.tdf                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.tdf            ;         ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf        ;         ;
+; cmpconst.tdf                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.tdf            ;         ;
+; 74153.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74153.bdf             ;         ;
+; 74374nt.bdf                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74374nt.bdf           ;         ;
+; 74157.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74157.bdf             ;         ;
+; 74139m.bdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74139m.bdf            ;         ;
+; 74374b.bdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74374b.bdf            ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.tdf             ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.inc              ;         ;
+; muxlut.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muxlut.tdf              ;         ;
+; 74244b.bdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74244b.bdf            ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                  ;
++----------------------+-------------------------------------------------------+
+; Resource             ; Usage                                                 ;
++----------------------+-------------------------------------------------------+
+; Logic cells          ; 118                                                   ;
+; Total registers      ; 67                                                    ;
+; I/O pins             ; 63                                                    ;
+; Shareable expanders  ; 25                                                    ;
+; Parallel expanders   ; 4                                                     ;
+; Maximum fan-out node ; hcount:inst|lpm_counter:LPM_COUNTER_component|dffs[1] ;
+; Maximum fan-out      ; 63                                                    ;
+; Total fan-out        ; 883                                                   ;
+; Average fan-out      ; 4.29                                                  ;
++----------------------+-------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                  ;
++-------------------------------------------+------------+------+-------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; Macrocells ; Pins ; Full Hierarchy Name                                                                                   ; Library Name ;
++-------------------------------------------+------------+------+-------------------------------------------------------------------------------------------------------+--------------+
+; |timvideo                                 ; 118        ; 63   ; |timvideo                                                                                             ; work         ;
+;    |21mux:inst4|                          ; 1          ; 0    ; |timvideo|21mux:inst4                                                                                 ; work         ;
+;    |21mux:inst5|                          ; 1          ; 0    ; |timvideo|21mux:inst5                                                                                 ; work         ;
+;    |74139m:inst57|                        ; 0          ; 0    ; |timvideo|74139m:inst57                                                                               ; work         ;
+;    |74153:inst23|                         ; 2          ; 0    ; |timvideo|74153:inst23                                                                                ; work         ;
+;    |74157:inst46|                         ; 7          ; 0    ; |timvideo|74157:inst46                                                                                ; work         ;
+;    |74374b:inst28|                        ; 8          ; 0    ; |timvideo|74374b:inst28                                                                               ; work         ;
+;    |74374nt:inst44|                       ; 8          ; 0    ; |timvideo|74374nt:inst44                                                                              ; work         ;
+;    |addrmux:inst13|                       ; 16         ; 0    ; |timvideo|addrmux:inst13                                                                              ; work         ;
+;       |lpm_mux:LPM_MUX_component|         ; 16         ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component                                                    ; work         ;
+;          |muxlut:$00009|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00009                                      ; work         ;
+;          |muxlut:$00011|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00011                                      ; work         ;
+;          |muxlut:$00013|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00013                                      ; work         ;
+;          |muxlut:$00015|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00015                                      ; work         ;
+;          |muxlut:$00017|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00017                                      ; work         ;
+;          |muxlut:$00019|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00019                                      ; work         ;
+;          |muxlut:$00021|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00021                                      ; work         ;
+;          |muxlut:$00023|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00023                                      ; work         ;
+;          |muxlut:$00025|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00025                                      ; work         ;
+;          |muxlut:$00027|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00027                                      ; work         ;
+;          |muxlut:$00029|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00029                                      ; work         ;
+;          |muxlut:$00031|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00031                                      ; work         ;
+;          |muxlut:$00033|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00033                                      ; work         ;
+;          |muxlut:$00035|                  ; 1          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00035                                      ; work         ;
+;          |muxlut:$00037|                  ; 2          ; 0    ; |timvideo|addrmux:inst13|lpm_mux:LPM_MUX_component|muxlut:$00037                                      ; work         ;
+;    |hcount:inst|                          ; 10         ; 0    ; |timvideo|hcount:inst                                                                                 ; work         ;
+;       |lpm_counter:LPM_COUNTER_component| ; 10         ; 0    ; |timvideo|hcount:inst|lpm_counter:LPM_COUNTER_component                                               ; work         ;
+;    |lpm_add_sub0:inst33|                  ; 6          ; 0    ; |timvideo|lpm_add_sub0:inst33                                                                         ; work         ;
+;       |lpm_add_sub:LPM_ADD_SUB_component| ; 6          ; 0    ; |timvideo|lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component                                       ; work         ;
+;          |addcore:adder|                  ; 6          ; 0    ; |timvideo|lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder                         ; work         ;
+;             |a_csnbuffer:result_node|     ; 3          ; 0    ; |timvideo|lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder|a_csnbuffer:result_node ; work         ;
+;             |addcore:adder[0]|            ; 3          ; 0    ; |timvideo|lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder|addcore:adder[0]        ; work         ;
+;    |scradd:inst40|                        ; 7          ; 0    ; |timvideo|scradd:inst40                                                                               ; work         ;
+;       |lpm_add_sub:LPM_ADD_SUB_component| ; 7          ; 0    ; |timvideo|scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component                                             ; work         ;
+;          |addcore:adder[0]|               ; 7          ; 0    ; |timvideo|scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder[0]                            ; work         ;
+;             |a_csnbuffer:result_node|     ; 3          ; 0    ; |timvideo|scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder[0]|a_csnbuffer:result_node    ; work         ;
+;    |vcount:inst2|                         ; 9          ; 0    ; |timvideo|vcount:inst2                                                                                ; work         ;
+;       |lpm_counter:LPM_COUNTER_component| ; 9          ; 0    ; |timvideo|vcount:inst2|lpm_counter:LPM_COUNTER_component                                              ; work         ;
++-------------------------------------------+------------+------+-------------------------------------------------------------------------------------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                        ;
++--------+--------------+---------+--------------+--------------+-------------------------------+--------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance               ; IP Include File                                              ;
++--------+--------------+---------+--------------+--------------+-------------------------------+--------------------------------------------------------------+
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |timvideo|hcount:inst         ; C:/altera/projects/tim011video/hcount.vhd                    ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |timvideo|vcount:inst2        ; C:/altera/projects/tim011video/vcount.vhd                    ;
+; Altera ; LPM_MUX      ; 13.0    ; N/A          ; N/A          ; |timvideo|addrmux:inst13      ; C:/altera/projects/tim011video/addrmux.vhd                   ;
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |timvideo|lpm_add_sub0:inst33 ; C:/altera/projects/tim011video/output_files/lpm_add_sub0.vhd ;
+; Altera ; LPM_ADD_SUB  ; 13.0    ; N/A          ; N/A          ; |timvideo|scradd:inst40       ; C:/altera/projects/tim011video/scradd.vhd                    ;
++--------+--------------+---------+--------------+--------------+-------------------------------+--------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: hcount:inst|lpm_counter:LPM_COUNTER_component ;
++------------------------+-------------+-----------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                ;
++------------------------+-------------+-----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                        ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                      ;
+; LPM_WIDTH              ; 10          ; Signed Integer                                      ;
+; LPM_DIRECTION          ; UP          ; Untyped                                             ;
+; LPM_MODULUS            ; 768         ; Signed Integer                                      ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                             ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                             ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                             ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                             ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                             ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                  ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                  ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                             ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                             ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                             ;
+; CBXI_PARAMETER         ; NOTHING     ; Untyped                                             ;
++------------------------+-------------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vcount:inst2|lpm_counter:LPM_COUNTER_component ;
++------------------------+-------------+------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                 ;
++------------------------+-------------+------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                           ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                         ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                         ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                       ;
+; LPM_WIDTH              ; 9           ; Signed Integer                                       ;
+; LPM_DIRECTION          ; UP          ; Untyped                                              ;
+; LPM_MODULUS            ; 320         ; Signed Integer                                       ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                              ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                              ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                              ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                              ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                              ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                   ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                   ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                              ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                              ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                              ;
+; CBXI_PARAMETER         ; NOTHING     ; Untyped                                              ;
++------------------------+-------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: addrmux:inst13|LPM_MUX:LPM_MUX_component ;
++------------------------+----------+---------------------------------------------------+
+; Parameter Name         ; Value    ; Type                                              ;
++------------------------+----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON       ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF      ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON       ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF      ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 15       ; Signed Integer                                    ;
+; LPM_SIZE               ; 2        ; Signed Integer                                    ;
+; LPM_WIDTHS             ; 1        ; Signed Integer                                    ;
+; LPM_PIPELINE           ; 0        ; Signed Integer                                    ;
+; CBXI_PARAMETER         ; mux_mpd  ; Untyped                                           ;
+; DEVICE_FAMILY          ; MAX7000S ; Untyped                                           ;
++------------------------+----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component ;
++------------------------+-------------+-------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                  ;
++------------------------+-------------+-------------------------------------------------------+
+; LPM_WIDTH              ; 8           ; Signed Integer                                        ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                               ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                               ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                               ;
+; LPM_PIPELINE           ; 0           ; Untyped                                               ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                               ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                               ;
+; OPTIMIZE_FOR_SPEED     ; 5           ; Untyped                                               ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                               ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                               ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                    ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                               ;
+; USE_WYS                ; OFF         ; Untyped                                               ;
+; STYLE                  ; FAST        ; Untyped                                               ;
+; CBXI_PARAMETER         ; add_sub_d9h ; Untyped                                               ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                          ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                        ;
++------------------------+-------------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component ;
++------------------------+-------------+-------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                        ;
++------------------------+-------------+-------------------------------------------------------------+
+; LPM_WIDTH              ; 7           ; Signed Integer                                              ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                                                     ;
+; LPM_DIRECTION          ; ADD         ; Untyped                                                     ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped                                                     ;
+; LPM_PIPELINE           ; 0           ; Untyped                                                     ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                                                     ;
+; REGISTERED_AT_END      ; 0           ; Untyped                                                     ;
+; OPTIMIZE_FOR_SPEED     ; 5           ; Untyped                                                     ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                                                     ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                     ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                          ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                                                     ;
+; USE_WYS                ; OFF         ; Untyped                                                     ;
+; STYLE                  ; FAST        ; Untyped                                                     ;
+; CBXI_PARAMETER         ; add_sub_c9h ; Untyped                                                     ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                              ;
++------------------------+-------------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat May 16 19:04:54 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off timvideo -c timvideo
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file timvideo.bdf
+    Info (12023): Found entity 1: timvideo
+Info (12021): Found 2 design units, including 1 entities, in source file hcount.vhd
+    Info (12022): Found design unit 1: hcount-SYN
+    Info (12023): Found entity 1: hcount
+Info (12021): Found 2 design units, including 1 entities, in source file vcount.vhd
+    Info (12022): Found design unit 1: vcount-SYN
+    Info (12023): Found entity 1: vcount
+Info (12021): Found 2 design units, including 1 entities, in source file addrmux.vhd
+    Info (12022): Found design unit 1: addrmux-SYN
+    Info (12023): Found entity 1: addrmux
+Info (12021): Found 2 design units, including 1 entities, in source file scradd.vhd
+    Info (12022): Found design unit 1: scradd-SYN
+    Info (12023): Found entity 1: scradd
+Info (12021): Found 2 design units, including 1 entities, in source file output_files/lpm_add_sub0.vhd
+    Info (12022): Found design unit 1: lpm_add_sub0-SYN
+    Info (12023): Found entity 1: lpm_add_sub0
+Info (12127): Elaborating entity "timvideo" for the top level hierarchy
+Info (12128): Elaborating entity "21mux" for hierarchy "21mux:inst4"
+Info (12130): Elaborated megafunction instantiation "21mux:inst4"
+Info (12128): Elaborating entity "hcount" for hierarchy "hcount:inst"
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12130): Elaborated megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12133): Instantiated megafunction "hcount:inst|lpm_counter:LPM_COUNTER_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "UP"
+    Info (12134): Parameter "lpm_modulus" = "768"
+    Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
+    Info (12134): Parameter "lpm_width" = "10"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub"
+Info (12131): Elaborated megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub", which is child of megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "addcore" for hierarchy "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|addcore:adder[1]"
+Info (12131): Elaborated megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|addcore:adder[1]", which is child of megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "a_csnbuffer" for hierarchy "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|addcore:adder[1]|a_csnbuffer:oflow_node"
+Info (12131): Elaborated megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|addcore:adder[1]|a_csnbuffer:oflow_node", which is child of megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "a_csnbuffer" for hierarchy "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|addcore:adder[1]|a_csnbuffer:result_node"
+Info (12131): Elaborated megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|addcore:adder[1]|a_csnbuffer:result_node", which is child of megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "addcore" for hierarchy "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|addcore:adder[0]"
+Info (12131): Elaborated megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|addcore:adder[0]", which is child of megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "look_add" for hierarchy "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|look_add:look_ahead_unit"
+Info (12131): Elaborated megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|look_add:look_ahead_unit", which is child of megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "altshift" for hierarchy "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|altshift:result_ext_latency_ffs"
+Info (12131): Elaborated megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "altshift" for hierarchy "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|altshift:carry_ext_latency_ffs"
+Info (12131): Elaborated megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|altshift:carry_ext_latency_ffs", which is child of megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_constant:scdw"
+Info (12131): Elaborated megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component|lpm_constant:scdw", which is child of megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "cmpconst" for hierarchy "hcount:inst|lpm_counter:LPM_COUNTER_component|cmpconst:$00036"
+Info (12131): Elaborated megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component|cmpconst:$00036", which is child of megafunction instantiation "hcount:inst|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "vcount" for hierarchy "vcount:inst2"
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "vcount:inst2|lpm_counter:LPM_COUNTER_component"
+Info (12130): Elaborated megafunction instantiation "vcount:inst2|lpm_counter:LPM_COUNTER_component"
+Info (12133): Instantiated megafunction "vcount:inst2|lpm_counter:LPM_COUNTER_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "UP"
+    Info (12134): Parameter "lpm_modulus" = "320"
+    Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
+    Info (12134): Parameter "lpm_width" = "9"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "vcount:inst2|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub"
+Info (12131): Elaborated megafunction instantiation "vcount:inst2|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub", which is child of megafunction instantiation "vcount:inst2|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "addcore" for hierarchy "vcount:inst2|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|addcore:adder[1]"
+Info (12131): Elaborated megafunction instantiation "vcount:inst2|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|addcore:adder[1]", which is child of megafunction instantiation "vcount:inst2|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "altshift" for hierarchy "vcount:inst2|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|altshift:result_ext_latency_ffs"
+Info (12131): Elaborated megafunction instantiation "vcount:inst2|lpm_counter:LPM_COUNTER_component|lpm_add_sub:add_sub|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "vcount:inst2|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "vcount:inst2|lpm_counter:LPM_COUNTER_component|lpm_constant:scdw"
+Info (12131): Elaborated megafunction instantiation "vcount:inst2|lpm_counter:LPM_COUNTER_component|lpm_constant:scdw", which is child of megafunction instantiation "vcount:inst2|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "cmpconst" for hierarchy "vcount:inst2|lpm_counter:LPM_COUNTER_component|cmpconst:$00036"
+Info (12131): Elaborated megafunction instantiation "vcount:inst2|lpm_counter:LPM_COUNTER_component|cmpconst:$00036", which is child of megafunction instantiation "vcount:inst2|lpm_counter:LPM_COUNTER_component"
+Info (12128): Elaborating entity "74153" for hierarchy "74153:inst23"
+Info (12130): Elaborated megafunction instantiation "74153:inst23"
+Info (12128): Elaborating entity "74374nt" for hierarchy "74374nt:inst44"
+Info (12130): Elaborated megafunction instantiation "74374nt:inst44"
+Info (12128): Elaborating entity "74157" for hierarchy "74157:inst46"
+Info (12130): Elaborated megafunction instantiation "74157:inst46"
+Info (12128): Elaborating entity "74139M" for hierarchy "74139M:inst57"
+Info (12130): Elaborated megafunction instantiation "74139M:inst57"
+Info (12128): Elaborating entity "74374b" for hierarchy "74374b:inst28"
+Info (12130): Elaborated megafunction instantiation "74374b:inst28"
+Info (12128): Elaborating entity "addrmux" for hierarchy "addrmux:inst13"
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "addrmux:inst13|LPM_MUX:LPM_MUX_component"
+Info (12130): Elaborated megafunction instantiation "addrmux:inst13|LPM_MUX:LPM_MUX_component"
+Info (12133): Instantiated megafunction "addrmux:inst13|LPM_MUX:LPM_MUX_component" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTH" = "15"
+    Info (12134): Parameter "LPM_SIZE" = "2"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_PIPELINE" = "0"
+    Info (12134): Parameter "LPM_TYPE" = "LPM_MUX"
+    Info (12134): Parameter "LPM_HINT" = "UNUSED"
+Info (12128): Elaborating entity "altshift" for hierarchy "addrmux:inst13|LPM_MUX:LPM_MUX_component|altshift:external_latency_ffs"
+Info (12131): Elaborated megafunction instantiation "addrmux:inst13|LPM_MUX:LPM_MUX_component|altshift:external_latency_ffs", which is child of megafunction instantiation "addrmux:inst13|LPM_MUX:LPM_MUX_component"
+Info (12128): Elaborating entity "muxlut" for hierarchy "addrmux:inst13|LPM_MUX:LPM_MUX_component|muxlut:$00009"
+Info (12131): Elaborated megafunction instantiation "addrmux:inst13|LPM_MUX:LPM_MUX_component|muxlut:$00009", which is child of megafunction instantiation "addrmux:inst13|LPM_MUX:LPM_MUX_component"
+Info (12128): Elaborating entity "scradd" for hierarchy "scradd:inst40"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12130): Elaborated megafunction instantiation "scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12133): Instantiated megafunction "scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "ADD"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "8"
+Info (12128): Elaborating entity "look_add" for hierarchy "scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component|look_add:look_ahead_unit"
+Info (12131): Elaborated megafunction instantiation "scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component|look_add:look_ahead_unit", which is child of megafunction instantiation "scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12128): Elaborating entity "altshift" for hierarchy "scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component|altshift:result_ext_latency_ffs"
+Info (12131): Elaborated megafunction instantiation "scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "scradd:inst40|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12128): Elaborating entity "lpm_add_sub0" for hierarchy "lpm_add_sub0:inst33"
+Info (12128): Elaborating entity "lpm_add_sub" for hierarchy "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12130): Elaborated megafunction instantiation "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12133): Instantiated megafunction "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "ADD"
+    Info (12134): Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info (12134): Parameter "lpm_representation" = "UNSIGNED"
+    Info (12134): Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info (12134): Parameter "lpm_width" = "7"
+Info (12128): Elaborating entity "addcore" for hierarchy "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder"
+Info (12131): Elaborated megafunction instantiation "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder", which is child of megafunction instantiation "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12128): Elaborating entity "a_csnbuffer" for hierarchy "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder|a_csnbuffer:oflow_node"
+Info (12131): Elaborated megafunction instantiation "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder|a_csnbuffer:oflow_node", which is child of megafunction instantiation "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12128): Elaborating entity "a_csnbuffer" for hierarchy "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder|a_csnbuffer:result_node"
+Info (12131): Elaborated megafunction instantiation "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder|a_csnbuffer:result_node", which is child of megafunction instantiation "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12128): Elaborating entity "addcore" for hierarchy "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder|addcore:adder[0]"
+Info (12131): Elaborated megafunction instantiation "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|addcore:adder|addcore:adder[0]", which is child of megafunction instantiation "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12128): Elaborating entity "altshift" for hierarchy "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|altshift:result_ext_latency_ffs"
+Info (12131): Elaborated megafunction instantiation "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "lpm_add_sub0:inst33|lpm_add_sub:LPM_ADD_SUB_component"
+Info (12128): Elaborating entity "74244b" for hierarchy "74244b:inst29"
+Info (12130): Elaborated megafunction instantiation "74244b:inst29"
+Info (13014): Ignored 26 buffer(s)
+    Info (13019): Ignored 26 SOFT buffer(s)
+Info (280013): Promoted pin-driven signal(s) to global signal
+    Info (280014): Promoted clock signal driven by pin "CLK" to global clock signal
+    Info (280015): Promoted clear signal driven by pin "nRESET" to global clear signal
+Info (280013): Promoted pin-driven signal(s) to global signal
+    Info (280014): Promoted clock signal driven by pin "CLK" to global clock signal
+    Info (280015): Promoted clear signal driven by pin "nRESET" to global clear signal
+Info (21057): Implemented 206 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 22 input pins
+    Info (21059): Implemented 25 output pins
+    Info (21060): Implemented 16 bidirectional pins
+    Info (21063): Implemented 118 macrocells
+    Info (21073): Implemented 25 shareable expanders
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4615 megabytes
+    Info: Processing ended: Sat May 16 19:04:58 2026
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

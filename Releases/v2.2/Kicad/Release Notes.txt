@@ -1,0 +1,34 @@
+v2 Initial Release
+
+Changed video logic to CPLD
+Add/move related video output
+Replace axial with radial capacitors
+Simplify reset switch to standard
+Added CF interface
+Added GAL16V8 with solder bridge jumpers for alternative addressing logic (with spares)
+
+v2.1
+
+Additional Clock Buffer with U14 and pull up
+Add CSYNC/Composite solder jumper for RGBI pin 7
+Add JMP11 Invert CSYNC Jumper
+Remove gates from GAL implementation
+Change ROM size, add extra jumpers
+RGBtoHDMI/video expansion header and clock solder jumper
+Move C1 out of the way of video expansion board
+
+v2.2
+
+Change H3 (GND) to 2.7mm
+Rotate J2 JTAG header 180 degrees
+Move decoupling cap C43 to right of FDC
+Change P401 (CF/IDE) and P4 (FDD) to boxed headers
+Add P10 Floppy Power header
+Add C9 Cap as 5V floppy motor buffer
+Add P11 MicroSD Card header inc /SD_CS from GAL pin 19 (remove /RD)
+Change U30 Video RAM to dual footprint
+Remove JLC tag
+Tidy up
+
+
+
